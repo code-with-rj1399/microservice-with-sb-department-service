@@ -4,9 +4,6 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8088"
 
-server:
-  port: 8081
-
 eureka:
   client:
     serviceUrl:
