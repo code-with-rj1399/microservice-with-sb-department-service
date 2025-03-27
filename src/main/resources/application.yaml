@@ -1,6 +1,8 @@
 spring:
   application:
     name: microservice-with-sb-department-service
+  config:
+    import: "optional:configserver:http://localhost:8088"
 
 server:
   port: 8081
