@@ -29,6 +29,12 @@ public class DepartmentController {
         return departmentService.getAllDepartments();
     }
 
+    @GetMapping("/with-employees")
+    public List<Department> getAllDepartmentsWithEmployees(){
+        log.info("Get all department with employees");
+        return departmentService.getAllDepartmentsWithEmployees();
+    }
+
     @GetMapping("/{id}")
     public Department getDepartmentById(@PathVariable  Long id){
         log.info("Get department by id {}", id);
